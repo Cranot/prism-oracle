@@ -1,18 +1,18 @@
-[36mFull Prism: static champion pipeline (10 steps, optimal models)[0m
-    [32mL12 STRUCTURAL[0m (l12) → [2msonnet[0m
-    [32mDEEP SCAN[0m (deep_scan) → [2msonnet[0m
-    [32mRECURSIVE ENTAILMENT[0m (fix_cascade) → [2msonnet[0m
-    [32mIDENTITY DISPLACEMENT[0m (identity) → [2msonnet[0m
-    [32mOPTIMIZATION COSTS[0m (optimize) → [2msonnet[0m
-    [32mERROR RESILIENCE[0m (error_resilience) → [2msonnet[0m
-    [32mCONTRACT FIDELITY[0m (fidelity) → [2msonnet[0m
-    [32mSECURITY[0m (security_v1) → [2msonnet[0m
-    [32mADVERSARIAL[0m (l12_complement_adversarial) → [2msonnet[0m
-    [32mSYNTHESIS[0m (l12_synthesis) → [2msonnet[0m
+Full Prism: static champion pipeline (10 steps, optimal models)
+    L12 STRUCTURAL (l12) → sonnet
+    DEEP SCAN (deep_scan) → sonnet
+    RECURSIVE ENTAILMENT (fix_cascade) → sonnet
+    IDENTITY DISPLACEMENT (identity) → sonnet
+    OPTIMIZATION COSTS (optimize) → sonnet
+    ERROR RESILIENCE (error_resilience) → sonnet
+    CONTRACT FIDELITY (fidelity) → sonnet
+    SECURITY (security_v1) → sonnet
+    ADVERSARIAL (l12_complement_adversarial) → sonnet
+    SYNTHESIS (l12_synthesis) → sonnet
 
-[1m[34m── L12 STRUCTURAL ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Structure First (Level 12: Meta-Conservation Law)
+── L12 STRUCTURAL ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Structure First (Level 12: Meta-Conservation Law)
 
 ## Complete Analysis
 
@@ -317,13 +317,13 @@ The original design hides relational complexity in temporal checks (indirect). T
 
 Bugs #1-3 and #16, #19 are **predicted by the meta-conservation law**: they arise from the fundamental tension between time-based state transitions and storage-based regime management. Fixing any of them individually creates new bugs (as shown in the improvement chain).
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 178 scans, 0 patterns, 5 laws[0m
-  [2mQueued 2 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/octant.md
+  Profile: 178 scans, 0 patterns, 5 laws
+  Queued 2 Q&As for AgentsKB seeding
 
-[1m[34m── DEEP SCAN ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Conserved Quantities Analysis: Octant Smart Contracts
+── DEEP SCAN ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Conserved Quantities Analysis: Octant Smart Contracts
 
 ## Step 1: Identify the Conservation Law
 
@@ -596,12 +596,12 @@ function emergencyWithdraw(uint256 amount) external onlyMultisig {
 | **Composition** | Integer overflow in epoch calculation (theoretical) | 224-228 | Low |
 | **Composition** | Reentrancy in `emergencyWithdraw()` | 395-401 | Critical |
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 179 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/octant.md
+  Profile: 179 scans, 0 patterns, 5 laws
 
-[1m[34m── RECURSIVE ENTAILMENT ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Structural Analysis: Octant Smart Contracts
+── RECURSIVE ENTAILMENT ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Structural Analysis: Octant Smart Contracts
 
 ## Step 1: Locate the Structural Defect
 
@@ -697,12 +697,12 @@ Any fix that improves **B** destroys **A** (configurability) or **C** (simplicit
 |-------------|----------|----------------|-----------|---------|
 | Temporal boundary indeterminacy in `getCurrentEpochProps()` | Epochs.sol:194-202 | Anti-corruption validation becomes unreachable for legitimate pre-configuration; administrative planning signal destroyed | `configurability × determinacy = constant` — cannot have both prospective epoch configuration and clean temporal mapping without multi-state complexity | **STRUCTURAL** |
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 180 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/octant.md
+  Profile: 180 scans, 0 patterns, 5 laws
 
-[1m[34m── IDENTITY DISPLACEMENT ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # IDENTITY DISPLACEMENT ANALYSIS: Octant Smart Contracts
+── IDENTITY DISPLACEMENT ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # IDENTITY DISPLACEMENT ANALYSIS: Octant Smart Contracts
 
 ## Step 1: Surface the Claim
 
@@ -977,12 +977,12 @@ function emergencyWithdraw(uint256 amount) external onlyMultisig {
 **1 Benign Design**:
 - Advisory lock/unlock timing (intentional flexibility)
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 181 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/octant.md
+  Profile: 181 scans, 0 patterns, 5 laws
 
-[1m[34m── OPTIMIZATION COSTS ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Opacity Analysis: Octant Smart Contract System
+── OPTIMIZATION COSTS ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Opacity Analysis: Octant Smart Contract System
 
 ## Step 1: Search for Opacity
 
@@ -1161,12 +1161,12 @@ This boundary erases the ENTIRE reward distribution logic, creating the deepest 
 **Primary conservation law:** **On-Chain Verification × Gas Cost = Constant**  
 **Meta-conservation law:** **Transparency × Scalability = Constant** (fundamental trade-off in all blockchain systems)
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 182 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/octant.md
+  Profile: 182 scans, 0 patterns, 5 laws
 
-[1m[34m── ERROR RESILIENCE ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll analyze this Solidity codebase using the L12 structural framework, tracing error boundaries and their consequences.
+── ERROR RESILIENCE ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll analyze this Solidity codebase using the L12 structural framework, tracing error boundaries and their consequences.
 
 ---
 
@@ -1473,12 +1473,12 @@ function batchWithdraw(WithdrawPayload[] calldata payloads) external nonReentran
 
 **Root pattern:** Time-based validation + storage update = TOCTOU (time-of-check-time-of-use) vulnerability. State transitions between validation and write. The fix requires either atomic operations (Fix B) or explicit failure context (Fix A), but not both simultaneously.
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 183 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/octant.md
+  Profile: 183 scans, 0 patterns, 5 laws
 
-[1m[34m── CONTRACT FIDELITY ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Complete Analysis: Octant Smart Contract Codebase
+── CONTRACT FIDELITY ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Complete Analysis: Octant Smart Contract Codebase
 
 ## Step 1: Map Explicit Promises to Implementation
 
@@ -1777,11 +1777,11 @@ function emergencyWithdraw(uint256 amount) external onlyMultisig {
 1. Send to `multisig` instead of `msg.sender`, OR
 2. Log `msg.sender` in the event instead of `multisig`
 
-  [2mSaved to .deep/findings/octant.md[0m
+  Saved to .deep/findings/octant.md
 
-[1m[34m── SECURITY ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll execute the three-step security analysis framework on this Solidity codebase.
+── SECURITY ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll execute the three-step security analysis framework on this Solidity codebase.
 
 ## Step 1: The Trust Map
 
@@ -1969,12 +1969,12 @@ The system trades **user protection** for **administrative simplicity**. By plac
 
 This is a **centralized trust model** — users must trust the multisig as completely as they would trust a centralized server. The blockchain component provides transparency but not true decentralization of control.
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 184 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/octant.md
+  Profile: 184 scans, 0 patterns, 5 laws
 
-[1m[34m── ADVERSARIAL ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # WRONG PREDICTIONS
+── ADVERSARIAL ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # WRONG PREDICTIONS
 
 ## Bug #7: Vault.batchWithdraw() State Update Order
 
@@ -2324,12 +2324,12 @@ function transferOwnership(address newOwner) external {
 
 **Key Insight:** The analysis overestimated the structural constraints. Most "impossibilities" are just missing validation. The real structural issue is that the epoch system uses two independent variables (time + storage) without a synchronization mechanism, but this is fixable by adding timing constraints to `setEpochProps()`.
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 185 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/octant.md
+  Profile: 185 scans, 0 patterns, 5 laws
 
-[1m[34m── SYNTHESIS ── octant.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # FINAL SYNTHESIS
+── SYNTHESIS ── octant.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # FINAL SYNTHESIS
 
 ## REFINED CONSERVATION LAW
 
@@ -2428,13 +2428,13 @@ When Analysis 1 finally proposes the inverted design (explicit epoch boundaries)
 - Pass 3 (Synthesis) reveals that the bug-fix cycle is actually probing the **design-space topology constraint** — the fix isn't "wrong," it's **mapping the boundary of the possible**
 
 The "deepest finding" is the realization that **the framework itself cannot escape its own conservation law**. Analysis 1's improvement chain, Analysis 2's information laundering, and Analysis 3's configurability/determinacy trade-off are all converging on the same fixed point: **you cannot have O(1) lookups, retroactive configurability, AND correct regime transitions**. This is L13 reflexivity — the analysis discovers its own impossibility theorem.
-[33mConfabulation warning:[0m 0 suspicious API refs, 68 high line numbers. Use --trust or oracle mode for verified output.
+Confabulation warning: 0 suspicious API refs, 68 high line numbers. Use --trust or oracle mode for verified output.
 
 
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 186 scans, 0 patterns, 5 laws[0m
-  [2mSaved to .deep/findings/octant.md[0m
-  [2mProfile: 187 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/octant.md
+  Profile: 186 scans, 0 patterns, 5 laws
+  Saved to .deep/findings/octant.md
+  Profile: 187 scans, 0 patterns, 5 laws
 
-[32mFull Pipeline complete: 10/10 steps, models: sonnet[0m
-  [2mUse /fix to pick issues, or /fix auto to fix all[0m
+Full Pipeline complete: 10/10 steps, models: sonnet
+  Use /fix to pick issues, or /fix auto to fix all

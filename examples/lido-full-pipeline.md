@@ -1,18 +1,18 @@
-[36mFull Prism: static champion pipeline (10 steps, optimal models)[0m
-    [32mL12 STRUCTURAL[0m (l12) → [2msonnet[0m
-    [32mDEEP SCAN[0m (deep_scan) → [2msonnet[0m
-    [32mRECURSIVE ENTAILMENT[0m (fix_cascade) → [2msonnet[0m
-    [32mIDENTITY DISPLACEMENT[0m (identity) → [2msonnet[0m
-    [32mOPTIMIZATION COSTS[0m (optimize) → [2msonnet[0m
-    [32mERROR RESILIENCE[0m (error_resilience) → [2msonnet[0m
-    [32mCONTRACT FIDELITY[0m (fidelity) → [2msonnet[0m
-    [32mSECURITY[0m (security_v1) → [2msonnet[0m
-    [32mADVERSARIAL[0m (l12_complement_adversarial) → [2msonnet[0m
-    [32mSYNTHESIS[0m (l12_synthesis) → [2msonnet[0m
+Full Prism: static champion pipeline (10 steps, optimal models)
+    L12 STRUCTURAL (l12) → sonnet
+    DEEP SCAN (deep_scan) → sonnet
+    RECURSIVE ENTAILMENT (fix_cascade) → sonnet
+    IDENTITY DISPLACEMENT (identity) → sonnet
+    OPTIMIZATION COSTS (optimize) → sonnet
+    ERROR RESILIENCE (error_resilience) → sonnet
+    CONTRACT FIDELITY (fidelity) → sonnet
+    SECURITY (security_v1) → sonnet
+    ADVERSARIAL (l12_complement_adversarial) → sonnet
+    SYNTHESIS (l12_synthesis) → sonnet
 
-[1m[34m── L12 STRUCTURAL ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # L12 Meta-Conservation Analysis: Lido StETH System
+── L12 STRUCTURAL ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # L12 Meta-Conservation Analysis: Lido StETH System
 
 ## Original Claim
 
@@ -302,13 +302,13 @@ The conversion advantage problem is EXACTLY the problem of "how long between ora
 
 **The conservation law predicts**: Bugs 1-3 and 4-5 are UNFIXABLE because they stem from the same root - the inability to have synchronous conversion operations in an asynchronous system. The oracle is the source of truth, and all operations between oracle reports are necessarily speculative.
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 134 scans, 0 patterns, 5 laws[0m
-  [2mQueued 3 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/lido.md
+  Profile: 134 scans, 0 patterns, 5 laws
+  Queued 3 Q&As for AgentsKB seeding
 
-[1m[34m── DEEP SCAN ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Structural Analysis of Lido StETH Contracts
+── DEEP SCAN ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Structural Analysis of Lido StETH Contracts
 
 ## Step 1: Identify the Conservation Law
 
@@ -679,12 +679,12 @@ Lido chose to sacrifice static balances for dynamic rebasing, enabling automatic
 4. If the WithdrawalQueue is upgraded, what prevents it from calling back into Lido during `finalize()`?
 5. What happens if `collectRewardsAndProcessWithdrawals()` is called with different `_reportClBalance` than `processClStateUpdate()`?
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 135 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 135 scans, 0 patterns, 5 laws
 
-[1m[34m── RECURSIVE ENTAILMENT ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        ## Step 1: Locate the Structural Defect
+── RECURSIVE ENTAILMENT ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        ## Step 1: Locate the Structural Defect
 
 **Location:** `StETH.sol` lines 419-434 (share rate calculation) and `Lido.sol` lines 1400-1409 (`_getShareRateNumerator`, `_getShareRateDenominator`)
 
@@ -780,12 +780,12 @@ postShareRate < preShareRate (holders directly lose value)
 |-------------|----------|----------------|-----------|---------|
 | **Share rate calculation excludes external shares from denominator while totalSupply includes external ether** | `StETH.sol:419-434` (conversion functions) and `Lido.sol:1400-1409` (`_getShareRateNumerator`, `_getgetShareRateDenominator`) | 1. Dilution from minting external shares becomes invisible<br>2. Bad debt socialization via share rate expansion becomes unobservable<br>3. Rebasing incentive for external→internal conversion disappears<br>4. Staking limit changes lose economic meaning<br>5. External ratio enforcement breaks | **Loss socialization asymmetry**: External losses must be distributed to internal token holders, but the mechanism (share rate expansion that looks like a gain) is inexpressible as either "pure loss" or "pure gain" - it's a paradoxical "expansion that represents contraction" | **STRUCTURAL** — Dual accounting for external/internal ether is mathematically required. The current design (external shares dilute internal holders without being in the share rate) is one manifestation. Any alternative (including external ether in share rate) breaks the socialization mechanism. The invariant is: **External ether with different risk profile requires a "two-way peg" that creates structural arbitrage between internal and external valuation** |
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 136 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 136 scans, 0 patterns, 5 laws
 
-[1m[34m── IDENTITY DISPLACEMENT ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # IDENTITY DISPLACEMENT ANALYSIS: Lido StETH & Lido Contracts
+── IDENTITY DISPLACEMENT ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # IDENTITY DISPLACEMENT ANALYSIS: Lido StETH & Lido Contracts
 
 ## Step 1: Surface the Claim
 
@@ -1094,12 +1094,12 @@ Lido maximizes protocol compatibility (liquid staking, rewards, composability) a
 
 But this breaks DeFi composability (expecting IERC20), so the displacement is NECESSARY.
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 137 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 137 scans, 0 patterns, 5 laws
 
-[1m[34m── OPTIMIZATION COSTS ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll analyze this Lido StETH implementation using the L12 meta-conservation framework to identify the structural impossibility and conservation law.
+── OPTIMIZATION COSTS ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll analyze this Lido StETH implementation using the L12 meta-conservation framework to identify the structural impossibility and conservation law.
 
 ## Step 1: The Three-Way Claim
 
@@ -1293,12 +1293,12 @@ The meta-conservation law `Abstraction Fidelity × Integration Capability = Cons
 
 **This is not a buggy contract—it's a contract that solves an impossible problem by accepting a necessary trade-off.**
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 138 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 138 scans, 0 patterns, 5 laws
 
-[1m[34m── ERROR RESILIENCE ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Lido StETH Structural Analysis: Error Boundaries and Information Destruction
+── ERROR RESILIENCE ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Lido StETH Structural Analysis: Error Boundaries and Information Destruction
 
 ## Step 1: The Error Boundaries
 
@@ -1868,12 +1868,12 @@ Therefore: Precision loss is STRUCTURALLY UNAVOIDABLE
 
 The error boundary at division rounding is not a flaw—it's the mathematical manifestation of this impossibility theorem.
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 140 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 140 scans, 0 patterns, 5 laws
 
-[1m[34m── CONTRACT FIDELITY ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Analysis: Lido StETH & Lido.sol Documentation-Implementation Gaps
+── CONTRACT FIDELITY ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Analysis: Lido StETH & Lido.sol Documentation-Implementation Gaps
 
 ## Step 1: Explicit Promises vs Implementation
 
@@ -2138,12 +2138,12 @@ The contract achieves implementation flexibility (rebasing, external shares, sta
 
 The **hidden cost**: Every integration must read and understand the full documentation. The contract's power comes from its deviation from ERC20 norms, but that deviation creates an asymmetric documentation burden - the simple interface (`balanceOf`) hides complex behavior (dynamic rebasing).
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 143 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 143 scans, 0 patterns, 5 laws
 
-[1m[34m── SECURITY ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        ## Step 1: The Trust Map
+── SECURITY ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        ## Step 1: The Trust Map
 
 ### External Input Entry Points
 
@@ -2411,12 +2411,12 @@ This is **by design** - Ethereum's consensus layer data is not natively accessib
 
 Lido chose (2) and (3), sacrificing (1). This is the **fundamental conservation law** of all bridge/oracle protocols.
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 144 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 144 scans, 0 patterns, 5 laws
 
-[1m[34m── ADVERSARIAL ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # ADVERSARIAL BREAKDOWN: Lido StETH Structural Analysis
+── ADVERSARIAL ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # ADVERSARIAL BREAKDOWN: Lido StETH Structural Analysis
 
 ## WRONG PREDICTIONS
 
@@ -2963,12 +2963,12 @@ AragonApp's `transferToVault` is part of the recovery mechanism. By overriding i
 ### Root cause of analysis failure:
 The analysis operated at the wrong level of abstraction. It treated **mathematical properties** (share rates, ratios) as the source of truth, when the **actual source of truth** is the **implementation logic** (which values are used in which calculations). The "concealment" it identified was often just **abstraction for modularity**, not malicious hiding.
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 147 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 147 scans, 0 patterns, 5 laws
 
-[1m[34m── SYNTHESIS ── lido.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # FINAL SYNTHESIS
+── SYNTHESIS ── lido.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # FINAL SYNTHESIS
 
 ## REFINED CONSERVATION LAW
 
@@ -3107,13 +3107,13 @@ The answer: **There is no correct share rate.** There are only different coordin
 The conservation law holds because **you cannot optimize all three perspectives simultaneously**. The share rate necessarily privileges one perspective at the expense of others.
 
 **This is the deepest finding because it reveals that what looks like a "bug" (conversion tax, loss socialization, information laundering) is actually a **GEOMETRIC NECESSITY** of projecting 4D → 1D.**
-[33mConfabulation warning:[0m 0 suspicious API refs, 38 high line numbers. Use --trust or oracle mode for verified output.
+Confabulation warning: 0 suspicious API refs, 38 high line numbers. Use --trust or oracle mode for verified output.
 
 
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 149 scans, 0 patterns, 5 laws[0m
-  [2mSaved to .deep/findings/lido.md[0m
-  [2mProfile: 150 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/lido.md
+  Profile: 149 scans, 0 patterns, 5 laws
+  Saved to .deep/findings/lido.md
+  Profile: 150 scans, 0 patterns, 5 laws
 
-[32mFull Pipeline complete: 10/10 steps, models: sonnet[0m
-  [2mUse /fix to pick issues, or /fix auto to fix all[0m
+Full Pipeline complete: 10/10 steps, models: sonnet
+  Use /fix to pick issues, or /fix auto to fix all

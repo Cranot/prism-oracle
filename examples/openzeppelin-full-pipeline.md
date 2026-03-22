@@ -1,18 +1,18 @@
-[36mFull Prism: static champion pipeline (10 steps, optimal models)[0m
-    [32mL12 STRUCTURAL[0m (l12) → [2msonnet[0m
-    [32mDEEP SCAN[0m (deep_scan) → [2msonnet[0m
-    [32mRECURSIVE ENTAILMENT[0m (fix_cascade) → [2msonnet[0m
-    [32mIDENTITY DISPLACEMENT[0m (identity) → [2msonnet[0m
-    [32mOPTIMIZATION COSTS[0m (optimize) → [2msonnet[0m
-    [32mERROR RESILIENCE[0m (error_resilience) → [2msonnet[0m
-    [32mCONTRACT FIDELITY[0m (fidelity) → [2msonnet[0m
-    [32mSECURITY[0m (security_v1) → [2msonnet[0m
-    [32mADVERSARIAL[0m (l12_complement_adversarial) → [2msonnet[0m
-    [32mSYNTHESIS[0m (l12_synthesis) → [2msonnet[0m
+Full Prism: static champion pipeline (10 steps, optimal models)
+    L12 STRUCTURAL (l12) → sonnet
+    DEEP SCAN (deep_scan) → sonnet
+    RECURSIVE ENTAILMENT (fix_cascade) → sonnet
+    IDENTITY DISPLACEMENT (identity) → sonnet
+    OPTIMIZATION COSTS (optimize) → sonnet
+    ERROR RESILIENCE (error_resilience) → sonnet
+    CONTRACT FIDELITY (fidelity) → sonnet
+    SECURITY (security_v1) → sonnet
+    ADVERSARIAL (l12_complement_adversarial) → sonnet
+    SYNTHESIS (l12_synthesis) → sonnet
 
-[1m[34m── L12 STRUCTURAL ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Level 12: Meta-Conservation Law Analysis
+── L12 STRUCTURAL ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Level 12: Meta-Conservation Law Analysis
 ## OpenZeppelin Contract Suite (ERC20, Ownable, ReentrancyGuard, AccessControl)
 
 ---
@@ -402,13 +402,13 @@ The meta-conservation law **"Predictability × Social Flexibility = Constant"** 
 
 **Testable prediction:** ANY attempt to "improve" OpenZeppelin's access control to add "better governance features" will inevitably **either** (a) reduce predictability by making guarantees conditional on social processes, **or** (b) reduce flexibility by encoding a specific governance model that excludes alternatives. There is no third option.
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 99 scans, 0 patterns, 5 laws[0m
-  [2mQueued 3 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 99 scans, 0 patterns, 5 laws
+  Queued 3 Q&As for AgentsKB seeding
 
-[1m[34m── DEEP SCAN ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        ## Step 1: Identify the Conservation Law
+── DEEP SCAN ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        ## Step 1: Identify the Conservation Law
 
 **Conserved Quantity: `Safety × Gas Efficiency × Debuggability = constant`**
 
@@ -644,12 +644,12 @@ bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
 
 **The law holds**: You cannot have gas-optimized, fully auditable, and maximally flexible contracts simultaneously. OpenZeppelin optimizes for gas + safety, pushing debuggability to external tools (event indexers, off-chain role trackers). This is the **correct** engineering choice for production contracts, but the conservation law means the trade-offs are unavoidable, not fixable.
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 100 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 100 scans, 0 patterns, 5 laws
 
-[1m[34m── RECURSIVE ENTAILMENT ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll analyze this OpenZeppelin codebase structurally to identify what these designs preserve and what they sacrifice.
+── RECURSIVE ENTAILMENT ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll analyze this OpenZeppelin codebase structurally to identify what these designs preserve and what they sacrifice.
 
 ---
 
@@ -755,12 +755,12 @@ The product is conserved. You cannot increase one without decreasing the other.
 
 **This is STRUCTURAL, not fixable.** The non-virtual wrappers are the mechanism that preserves the conservation law.
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 101 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 101 scans, 0 patterns, 5 laws
 
-[1m[34m── IDENTITY DISPLACEMENT ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        ## Step 1: Surface the Claim
+── IDENTITY DISPLACEMENT ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        ## Step 1: Surface the Claim
 
 These OpenZeppelin contracts claim to be:
 
@@ -945,12 +945,12 @@ The only displacement that could be removed without breaking valuable properties
 
 The pattern: OpenZeppelin trades descriptive clarity for implementation efficiency. The names are the lie; the code is the truth.
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 104 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 104 scans, 0 patterns, 5 laws
 
-[1m[34m── OPTIMIZATION COSTS ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll execute the three-step analysis on this OpenZeppelin smart contract code.
+── OPTIMIZATION COSTS ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll execute the three-step analysis on this OpenZeppelin smart contract code.
 
 ## Step 1: Search for Opacity
 
@@ -1089,12 +1089,12 @@ The `_update()` virtual function boundary destroys the most. It erases all knowl
 
 Every abstraction that allows contracts to be extended/overhead (virtual functions, interfaces, nested mappings) directly erases the information needed for gas optimization. You cannot have both upgradeable token standards AND predictable sub-50k gas transfers. The boundary IS the feature.
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 105 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 105 scans, 0 patterns, 5 laws
 
-[1m[34m── ERROR RESILIENCE ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll execute the three-step analysis protocol on this OpenZeppelin codebase.
+── ERROR RESILIENCE ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll execute the three-step analysis protocol on this OpenZeppelin codebase.
 
 ## Step 1: The Error Boundaries
 
@@ -1395,12 +1395,12 @@ The OpenZeppelin implementation chose Fix B (gas optimization), betting that **s
 
 The deeper impossibility: **Token contracts must be both (a) efficient enough for economic use AND (b) secure enough to protect value.** These requirements exist in tension because security requires runtime checks, and efficiency requires removing them. No ERC20 implementation can escape this trade-off—the conservation law is fundamental to the EVM design.
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 110 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 110 scans, 0 patterns, 5 laws
 
-[1m[34m── CONTRACT FIDELITY ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Structural Deep-Scan: OpenZeppelin Contract Suite
+── CONTRACT FIDELITY ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Structural Deep-Scan: OpenZeppelin Contract Suite
 
 ## Three Simultaneous Claims
 
@@ -1482,12 +1482,12 @@ The `ERC20._update` pattern will fail when:
 
 **Conservation law validated**: Gas efficiency requires hiding safety checks. Hidden checks require expert knowledge. Expert knowledge concentrates risk in human operators, not code auditors. The system optimizes for the former while claiming the latter.
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 111 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 111 scans, 0 patterns, 5 laws
 
-[1m[34m── SECURITY ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        ## Step 1: The Trust Map
+── SECURITY ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        ## Step 1: The Trust Map
 
 ### Entry Points and Assumptions
 
@@ -1776,12 +1776,12 @@ Customization Freedom × Security Guarantees = Constant
 
 You cannot have both infinite customization AND security guarantees. OpenZeppelin chooses customization, transferring security responsibility to implementers.
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 114 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 114 scans, 0 patterns, 5 laws
 
-[1m[34m── ADVERSARIAL ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # WRONG PREDICTIONS
+── ADVERSARIAL ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # WRONG PREDICTIONS
 
 ## Claim: "ERC20._approve() has a race condition that's Critical/Structural"
 **Location:** `ERC20._approve(address, address, uint256, bool)`, lines 325-342
@@ -2010,12 +2010,12 @@ abstract contract GovernanceHierarchy is Ownable, SealedAccessControl {
 
 The analysis correctly identified many issues but **overstated fundamentality** (calling implementation choices "structural impossibilities") and **missed entire categories of bugs** (cross-contract interactions, enumeration limitations, front-running). The "conservation laws" are mostly **design trade-offs** that can be relocated or transformed by considering additional dimensions (time, system boundaries, gradual handoffs).
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 117 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 117 scans, 0 patterns, 5 laws
 
-[1m[34m── SYNTHESIS ── oz_erc20.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # FINAL SYNTHESIS
+── SYNTHESIS ── oz_erc20.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # FINAL SYNTHESIS
 
 ## REFINED CONSERVATION LAW
 
@@ -2149,13 +2149,13 @@ Analysis 1's "improvements" failed because they tried to **mechanize the social 
 **This is the L13 fixed point:** The framework of analysis discovers that the object of analysis (OpenZeppelin contracts) has already encountered the same impossibility that the framework itself is based on (governance resists mechanization). The "bug" is the boundary between mechanical and social — and the boundary is necessary, not accidental.
 
 **Testable prediction:** ANY smart contract library that encodes access control will have the same silence at the authority transition boundary. The silence is conserved across all implementations because it's where the social necessarily re-enters the system.
-[33mConfabulation warning:[0m 0 suspicious API refs, 64 high line numbers. Use --trust or oracle mode for verified output.
+Confabulation warning: 0 suspicious API refs, 64 high line numbers. Use --trust or oracle mode for verified output.
 
 
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 119 scans, 0 patterns, 5 laws[0m
-  [2mSaved to .deep/findings/oz_erc20.md[0m
-  [2mProfile: 120 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 119 scans, 0 patterns, 5 laws
+  Saved to .deep/findings/oz_erc20.md
+  Profile: 120 scans, 0 patterns, 5 laws
 
-[32mFull Pipeline complete: 10/10 steps, models: sonnet[0m
-  [2mUse /fix to pick issues, or /fix auto to fix all[0m
+Full Pipeline complete: 10/10 steps, models: sonnet
+  Use /fix to pick issues, or /fix auto to fix all

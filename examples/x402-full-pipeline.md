@@ -1,18 +1,18 @@
-[36mFull Prism: static champion pipeline (10 steps, optimal models)[0m
-    [32mL12 STRUCTURAL[0m (l12) → [2msonnet[0m
-    [32mDEEP SCAN[0m (deep_scan) → [2msonnet[0m
-    [32mRECURSIVE ENTAILMENT[0m (fix_cascade) → [2msonnet[0m
-    [32mIDENTITY DISPLACEMENT[0m (identity) → [2msonnet[0m
-    [32mOPTIMIZATION COSTS[0m (optimize) → [2msonnet[0m
-    [32mERROR RESILIENCE[0m (error_resilience) → [2msonnet[0m
-    [32mCONTRACT FIDELITY[0m (fidelity) → [2msonnet[0m
-    [32mSECURITY[0m (security_v1) → [2msonnet[0m
-    [32mADVERSARIAL[0m (l12_complement_adversarial) → [2msonnet[0m
-    [32mSYNTHESIS[0m (l12_synthesis) → [2msonnet[0m
+Full Prism: static champion pipeline (10 steps, optimal models)
+    L12 STRUCTURAL (l12) → sonnet
+    DEEP SCAN (deep_scan) → sonnet
+    RECURSIVE ENTAILMENT (fix_cascade) → sonnet
+    IDENTITY DISPLACEMENT (identity) → sonnet
+    OPTIMIZATION COSTS (optimize) → sonnet
+    ERROR RESILIENCE (error_resilience) → sonnet
+    CONTRACT FIDELITY (fidelity) → sonnet
+    SECURITY (security_v1) → sonnet
+    ADVERSARIAL (l12_complement_adversarial) → sonnet
+    SYNTHESIS (l12_synthesis) → sonnet
 
-[1m[34m── L12 STRUCTURAL ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # L12 Meta-Conservation Analysis: x402 Protocol Implementation
+── L12 STRUCTURAL ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # L12 Meta-Conservation Analysis: x402 Protocol Implementation
 
 ## Original Claim
 
@@ -332,13 +332,13 @@ The x402 code tries to minimize both simultaneously, which is impossible. Every 
 | `x402Client.ts:419-421` | `supportedPaymentRequirements` filter can return empty array. Thrown error lists registered schemes but error happens at payment creation time, not registration time. | HIGH | Client registration and server discovery are decoupled |
 | `x402ResourceServer.ts:653` | `getFacilitatorExtensions` returns `[]` when version not found. Caller sees no extensions available, doesn't know if version mismatch or no extensions registered. | MEDIUM | Version map is partitioned by component |
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 102 scans, 0 patterns, 5 laws[0m
-  [2mQueued 3 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/x402.md
+  Profile: 102 scans, 0 patterns, 5 laws
+  Queued 3 Q&As for AgentsKB seeding
 
-[1m[34m── DEEP SCAN ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        ## Analysis of x402 Protocol Core Server Code
+── DEEP SCAN ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        ## Analysis of x402 Protocol Core Server Code
 
 ### Step 1: Identify the Conservation Law
 
@@ -783,13 +783,13 @@ case 2:
   );
 ```
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 106 scans, 0 patterns, 5 laws[0m
-  [2mQueued 1 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/x402.md
+  Profile: 106 scans, 0 patterns, 5 laws
+  Queued 1 Q&As for AgentsKB seeding
 
-[1m[34m── RECURSIVE ENTAILMENT ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll execute the structural analysis on this x402 payment protocol codebase.
+── RECURSIVE ENTAILMENT ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll execute the structural analysis on this x402 payment protocol codebase.
 
 ## Step 1: Locate the Structural Defect
 
@@ -885,12 +885,12 @@ This must be managed, never solved. The hook trilogy is the **minimum representa
 
 The current 9x duplication is the cost of making **transaction boundaries explicit** in the type system.
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 109 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/x402.md
+  Profile: 109 scans, 0 patterns, 5 laws
 
-[1m[34m── IDENTITY DISPLACEMENT ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Identity Displacement Analysis: x402 Protocol Core Server
+── IDENTITY DISPLACEMENT ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Identity Displacement Analysis: x402 Protocol Core Server
 
 ## Step 1: Surface the Claim
 
@@ -1199,12 +1199,12 @@ The accidental displacements (4, 5, 8) are technical debt:
 
 **Core conservation law**: `Flexibility × Predictability = constant`. Every hook, policy, and version check adds flexibility at the cost of making behavior harder to predict from method names alone.
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 113 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/x402.md
+  Profile: 113 scans, 0 patterns, 5 laws
 
-[1m[34m── OPTIMIZATION COSTS ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Step 1: Search for Opacity
+── OPTIMIZATION COSTS ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Step 1: Search for Opacity
 
 ## Boundary 1: Dynamic Dispatch to Scheme Implementations
 **Location**: `x402Client.register()` → `SchemeNetworkClient` interface
@@ -1335,12 +1335,12 @@ The accidental displacements (4, 5, 8) are technical debt:
 3. **Facilitator Lookup**: `runtime_discovery × lookup_speed = constant` — Cannot have both dynamic facilitator routing AND O(1) lookups
 4. **Policy System**: `filtering_transparency × allocation_efficiency = constant` — Cannot have both per-policy visibility AND single-pass filtering
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 116 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/x402.md
+  Profile: 116 scans, 0 patterns, 5 laws
 
-[1m[34m── ERROR RESILIENCE ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Step 1: The Error Boundaries
+── ERROR RESILIENCE ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Step 1: The Error Boundaries
 
 ## 1. Hook Error Transforms (x402Client.createPaymentPayload)
 
@@ -1930,12 +1930,12 @@ The invariant reveals why the original implementation is a local maximum of badn
 |----------|-----------|----------------|------|----------------|----------------|-----------|
 | **Extension enrichment error silencing** (lines 587-600) | Which extension failed, why, partial enrichment state | Client receives incomplete PaymentRequired, cannot detect missing extension data | Security bypasses, production incidents from missing required fields, debugging impossibility | Graceful degradation (any failure = full 500 error), extension independence (one broken extension blocks all) | Error immediacy (must check response.failedExtensions), automatic monitoring (exceptions bypassed by manual field), fail-fast semantics | **Extension Enrichment Atomicity** = Explicit Exceptions + Response-Embedded Failures = Constant. Either success or recorded failure, no silent middle ground. |
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 122 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/x402.md
+  Profile: 122 scans, 0 patterns, 5 laws
 
-[1m[34m── CONTRACT FIDELITY ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Code Analysis: x402 Protocol Implementation
+── CONTRACT FIDELITY ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Code Analysis: x402 Protocol Implementation
 
 ## Step 1: Map Explicit Promises to Implementation
 
@@ -2271,12 +2271,12 @@ This asymmetry means extensions cannot intentionally signal "don't include this 
 3. Facilitator fallback errors don't preserve context
 4. Extension return value semantics (`undefined` vs `null`) ambiguous
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mSkipping SECURITY — no security signals[0m
+  Saved to .deep/findings/x402.md
+  Skipping SECURITY — no security signals
 
-[1m[34m── ADVERSARIAL ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # ADVERSARIAL ANALYSIS: Breaking the x402 Structural Claims
+── ADVERSARIAL ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # ADVERSARIAL ANALYSIS: Breaking the x402 Structural Claims
 
 ## WRONG PREDICTIONS
 
@@ -2603,12 +2603,12 @@ return enriched;
 
 This is fixable by adding **validation at registration boundaries**, not by restructuring the entire architecture.
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 125 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/x402.md
+  Profile: 125 scans, 0 patterns, 5 laws
 
-[1m[34m── SYNTHESIS ── x402.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # FINAL SYNTHESIS: x402 Protocol Implementation
+── SYNTHESIS ── x402.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # FINAL SYNTHESIS: x402 Protocol Implementation
 
 ---
 
@@ -2720,13 +2720,13 @@ The deepest finding is that **the protocol cannot safely evolve**. Every attempt
 4. Require new facilitator discovery coordination (Analysis 2)
 
 The conservation law **predicts** that Version 3 will be exponentially harder to coordinate than Version 2, which was already harder than Version 1. The code is on a complexity trajectory that will become unmanageable.
-[33mConfabulation warning:[0m 0 suspicious API refs, 100 high line numbers. Use --trust or oracle mode for verified output.
+Confabulation warning: 0 suspicious API refs, 100 high line numbers. Use --trust or oracle mode for verified output.
 
 
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 128 scans, 0 patterns, 5 laws[0m
-  [2mSaved to .deep/findings/x402.md[0m
-  [2mProfile: 129 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/x402.md
+  Profile: 128 scans, 0 patterns, 5 laws
+  Saved to .deep/findings/x402.md
+  Profile: 129 scans, 0 patterns, 5 laws
 
-[32mFull Pipeline complete: 9/10 steps, models: sonnet[0m
-  [2mUse /fix to pick issues, or /fix auto to fix all[0m
+Full Pipeline complete: 9/10 steps, models: sonnet
+  Use /fix to pick issues, or /fix auto to fix all

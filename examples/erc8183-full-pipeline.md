@@ -1,18 +1,18 @@
-[36mFull Prism: static champion pipeline (10 steps, optimal models)[0m
-    [32mL12 STRUCTURAL[0m (l12) → [2msonnet[0m
-    [32mDEEP SCAN[0m (deep_scan) → [2msonnet[0m
-    [32mRECURSIVE ENTAILMENT[0m (fix_cascade) → [2msonnet[0m
-    [32mIDENTITY DISPLACEMENT[0m (identity) → [2msonnet[0m
-    [32mOPTIMIZATION COSTS[0m (optimize) → [2msonnet[0m
-    [32mERROR RESILIENCE[0m (error_resilience) → [2msonnet[0m
-    [32mCONTRACT FIDELITY[0m (fidelity) → [2msonnet[0m
-    [32mSECURITY[0m (security_v1) → [2msonnet[0m
-    [32mADVERSARIAL[0m (l12_complement_adversarial) → [2msonnet[0m
-    [32mSYNTHESIS[0m (l12_synthesis) → [2msonnet[0m
+Full Prism: static champion pipeline (10 steps, optimal models)
+    L12 STRUCTURAL (l12) → sonnet
+    DEEP SCAN (deep_scan) → sonnet
+    RECURSIVE ENTAILMENT (fix_cascade) → sonnet
+    IDENTITY DISPLACEMENT (identity) → sonnet
+    OPTIMIZATION COSTS (optimize) → sonnet
+    ERROR RESILIENCE (error_resilience) → sonnet
+    CONTRACT FIDELITY (fidelity) → sonnet
+    SECURITY (security_v1) → sonnet
+    ADVERSARIAL (l12_complement_adversarial) → sonnet
+    SYNTHESIS (l12_synthesis) → sonnet
 
-[1m[34m── L12 STRUCTURAL ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # L12 Meta-Conservation Analysis: EIP-8183 Agentic Commerce
+── L12 STRUCTURAL ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # L12 Meta-Conservation Analysis: EIP-8183 Agentic Commerce
 
 ## Level 1: Initial Claim
 
@@ -325,13 +325,13 @@ Every concrete bug, edge case, and silent failure revealed by this analysis:
 
 **Meta-Conservation Law:** The protocol achieves **state machine simplicity** by externalizing complexity: disputes become time-costs, partial completion becomes binary outcomes, and evaluation becomes either centralized trust or speculative prediction. The conservation law of `Evaluation Context × Temporal Decoupling = constant` conceals the deeper meta-law: **discrete representation × continuous reality = information loss**. The protocol's elegance depends on what it refuses to represent.
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 163 scans, 0 patterns, 5 laws[0m
-  [2mQueued 3 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 163 scans, 0 patterns, 5 laws
+  Queued 3 Q&As for AgentsKB seeding
 
-[1m[34m── DEEP SCAN ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Conserved Quantity Analysis: EIP-8183 Agentic Commerce
+── DEEP SCAN ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Conserved Quantity Analysis: EIP-8183 Agentic Commerce
 
 ## Step 1: Identify the Conservation Law
 
@@ -601,12 +601,12 @@ The protocol cannot simultaneously have:
 
 You must pick two. EIP-8183 chooses **composability + simplicity**, sacrificing **verifiability** (each hooked job requires custom audit).
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 164 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 164 scans, 0 patterns, 5 laws
 
-[1m[34m── RECURSIVE ENTAILMENT ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        ## Step 1: Locate the Structural Defect
+── RECURSIVE ENTAILMENT ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        ## Step 1: Locate the Structural Defect
 
 **Defect 1: setBudget Authorization Mismatch**
 
@@ -704,12 +704,12 @@ You cannot have a 4-state machine that cleanly expresses "Open with no provider,
 
 **Verdict: STRUCTURAL** — These defects cannot be individually fixed without creating new problems, because they stem from the specification's attempt to be both minimal (4-state machine) and flexible (optional provider, extensible hooks). The conservation law is between **workflow expressiveness** and **state machine simplicity**; improving one necessarily degrades the other. The protocol must choose: either accept a more complex state machine (add explicit Negotiated/Assigned states) or accept limited workflows (require provider and budget at creation).
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 165 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 165 scans, 0 patterns, 5 laws
 
-[1m[34m── IDENTITY DISPLACEMENT ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Identity Displacement Analysis: ERC-8183 Agentic Commerce
+── IDENTITY DISPLACEMENT ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Identity Displacement Analysis: ERC-8183 Agentic Commerce
 
 ## Step 1: Surface the Claim
 
@@ -1105,12 +1105,12 @@ This would simplify:
 
 **The spec's "minimal surface" claim is true ONLY for the state machine core (lines 145-257). The reference implementation is a managed platform, not a minimal primitive.**
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 166 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 166 scans, 0 patterns, 5 laws
 
-[1m[34m── OPTIMIZATION COSTS ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # L12 Analysis: EIP-8183 Agentic Commerce Protocol
+── OPTIMIZATION COSTS ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # L12 Analysis: EIP-8183 Agentic Commerce Protocol
 
 Execute every step below. Output the complete analysis.
 
@@ -1401,12 +1401,12 @@ The core escrow logic is sound (reentrancy-protected, state-machine-enforced), b
 
 The conservation law `Extensibility × Predictability = Constant` explains why simpler protocols (no hooks) are easier to audit but harder to adapt, while hook-heavy protocols are flexible but require extensive due diligence. There is no free lunch — you pay complexity somewhere, either in the protocol or in the verification layer.
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 167 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 167 scans, 0 patterns, 5 laws
 
-[1m[34m── ERROR RESILIENCE ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # ERC-8183 Agentic Commerce: Complete Analysis
+── ERROR RESILIENCE ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # ERC-8183 Agentic Commerce: Complete Analysis
 
 ## Step 1: The Error Boundaries
 
@@ -1747,12 +1747,12 @@ Whether try-catch or direct call, the hook's decision to reject is respected. Th
 
 **Recommendation:** Fix #1 is mandatory for spec compliance. Others are quality improvements but not vulnerabilities.
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 168 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 168 scans, 0 patterns, 5 laws
 
-[1m[34m── CONTRACT FIDELITY ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # ERC-8183 Agentic Commerce Protocol - Complete Analysis
+── CONTRACT FIDELITY ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # ERC-8183 Agentic Commerce Protocol - Complete Analysis
 
 ## Step 1: Map Explicit Promises to Implementation
 
@@ -1895,12 +1895,12 @@ interface IACPHook {
 
 The protocol implements more than it specifies (evaluator fees, zero-budget paths) and specifies more than it implements (client budget setting, optParams for setProvider, ERC-2771 in reference).
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 169 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 169 scans, 0 patterns, 5 laws
 
-[1m[34m── SECURITY ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll analyze this ERC-8183 Agentic Commerce protocol implementation for security vulnerabilities.
+── SECURITY ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll analyze this ERC-8183 Agentic Commerce protocol implementation for security vulnerabilities.
 
 ## Step 1: The Trust Map
 
@@ -2147,12 +2147,12 @@ if (job.status != JobStatus.Funded) revert WrongStatus();
 (bool success, ) = hook.call{gas: HOOK_GAS_LIMIT}(abi.encodeWithSelector(...));
 ```
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 170 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 170 scans, 0 patterns, 5 laws
 
-[1m[34m── ADVERSARIAL ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll conduct a systematic adversarial analysis of this L12 Meta-Conservation Analysis, testing each claim against the actual code.
+── ADVERSARIAL ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll conduct a systematic adversarial analysis of this L12 Meta-Conservation Analysis, testing each claim against the actual code.
 
 # WRONG PREDICTIONS
 
@@ -2410,12 +2410,12 @@ Consolidating ALL bugs with corrected classifications:
 
 5. **The protocol has 7 HIGH-severity fixable bugs** (setBudget authorization, expectedBudget missing, hook reentrancy - though already protected, meta-transactions broken, hook liveness) and 3 fixable MEDIUM-severity design flaws (evaluator fee bias, no evaluator rotation, budget negotiation deadlock)
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 171 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 171 scans, 0 patterns, 5 laws
 
-[1m[34m── SYNTHESIS ── erc8183.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # FINAL SYNTHESIS: EIP-8183 Agentic Commerce
+── SYNTHESIS ── erc8183.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # FINAL SYNTHESIS: EIP-8183 Agentic Commerce
 
 ---
 
@@ -2583,13 +2583,13 @@ It is NOT suitable for:
 - Long expiry times (capital deadweight becomes prohibitive)
 
 This finding — that the protocol's design choices create inherent economic attack surfaces that cannot be fixed without sacrificing its core goals — is ONLY visible when all four analytical perspectives are combined. No single analysis could reach this conclusion.
-[33mConfabulation warning:[0m 0 suspicious API refs, 52 high line numbers. Use --trust or oracle mode for verified output.
+Confabulation warning: 0 suspicious API refs, 52 high line numbers. Use --trust or oracle mode for verified output.
 
 
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 172 scans, 0 patterns, 5 laws[0m
-  [2mSaved to .deep/findings/erc8183.md[0m
-  [2mProfile: 173 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8183.md
+  Profile: 172 scans, 0 patterns, 5 laws
+  Saved to .deep/findings/erc8183.md
+  Profile: 173 scans, 0 patterns, 5 laws
 
-[32mFull Pipeline complete: 10/10 steps, models: sonnet[0m
-  [2mUse /fix to pick issues, or /fix auto to fix all[0m
+Full Pipeline complete: 10/10 steps, models: sonnet
+  Use /fix to pick issues, or /fix auto to fix all

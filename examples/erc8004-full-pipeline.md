@@ -1,18 +1,18 @@
-[36mFull Prism: static champion pipeline (10 steps, optimal models)[0m
-    [32mL12 STRUCTURAL[0m (l12) → [2msonnet[0m
-    [32mDEEP SCAN[0m (deep_scan) → [2msonnet[0m
-    [32mRECURSIVE ENTAILMENT[0m (fix_cascade) → [2msonnet[0m
-    [32mIDENTITY DISPLACEMENT[0m (identity) → [2msonnet[0m
-    [32mOPTIMIZATION COSTS[0m (optimize) → [2msonnet[0m
-    [32mERROR RESILIENCE[0m (error_resilience) → [2msonnet[0m
-    [32mCONTRACT FIDELITY[0m (fidelity) → [2msonnet[0m
-    [32mSECURITY[0m (security_v1) → [2msonnet[0m
-    [32mADVERSARIAL[0m (l12_complement_adversarial) → [2msonnet[0m
-    [32mSYNTHESIS[0m (l12_synthesis) → [2msonnet[0m
+Full Prism: static champion pipeline (10 steps, optimal models)
+    L12 STRUCTURAL (l12) → sonnet
+    DEEP SCAN (deep_scan) → sonnet
+    RECURSIVE ENTAILMENT (fix_cascade) → sonnet
+    IDENTITY DISPLACEMENT (identity) → sonnet
+    OPTIMIZATION COSTS (optimize) → sonnet
+    ERROR RESILIENCE (error_resilience) → sonnet
+    CONTRACT FIDELITY (fidelity) → sonnet
+    SECURITY (security_v1) → sonnet
+    ADVERSARIAL (l12_complement_adversarial) → sonnet
+    SYNTHESIS (l12_synthesis) → sonnet
 
-[1m[34m── L12 STRUCTURAL ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Structure First Analysis: ERC-8004 Reference Implementation
+── L12 STRUCTURAL ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Structure First Analysis: ERC-8004 Reference Implementation
 
 ## Level 12: Meta-Conservation Law Analysis
 
@@ -364,13 +364,13 @@ But you can never have **both object-simplicity AND relation-purity**. Every ide
 
 All other bugs are **fixable** with targeted patches.
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 103 scans, 0 patterns, 5 laws[0m
-  [2mQueued 1 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 103 scans, 0 patterns, 5 laws
+  Queued 1 Q&As for AgentsKB seeding
 
-[1m[34m── DEEP SCAN ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll execute the protocol to analyze this ERC-8004 implementation for conserved quantities, information laundering, and structural bugs.
+── DEEP SCAN ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll execute the protocol to analyze this ERC-8004 implementation for conserved quantities, information laundering, and structural bugs.
 
 ## Step 1: Identify the Conservation Law
 
@@ -627,13 +627,13 @@ The same three-step update vulnerability as domain updates. Between deleting the
 
 The most critical issue is the **three-step update pattern** in both domain and address updates, which creates exploitable race conditions.
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 107 scans, 0 patterns, 5 laws[0m
-  [2mQueued 2 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 107 scans, 0 patterns, 5 laws
+  Queued 2 Q&As for AgentsKB seeding
 
-[1m[34m── RECURSIVE ENTAILMENT ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Structural Defect Analysis: ERC-8004 Reference Implementation
+── RECURSIVE ENTAILMENT ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Structural Defect Analysis: ERC-8004 Reference Implementation
 
 ## Step 1: Locate the Structural Defect
 
@@ -717,12 +717,12 @@ The fundamental tradeoff is between **user experience fidelity** (preserving inp
 
 The "fix" is not to eliminate the duality but to **make its maintenance unavoidable** through architectural enforcement.
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 108 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 108 scans, 0 patterns, 5 laws
 
-[1m[34m── IDENTITY DISPLACEMENT ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # IDENTITY DISPLACEMENT ANALYSIS: ERC-8004 Reference Implementation
+── IDENTITY DISPLACEMENT ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # IDENTITY DISPLACEMENT ANALYSIS: ERC-8004 Reference Implementation
 
 ## Step 1: Surface the Claim
 
@@ -971,12 +971,12 @@ The architecture reveals a fundamental tension: ERC-8004 claims "trustless agent
 
 The displacement analysis proves: **the code IS a gas-optimized registry with flexible management features, but CLAIMS to be a complete trustless agent reputation system.** The gap between claim and reality is where the trust requirements live.
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 112 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 112 scans, 0 patterns, 5 laws
 
-[1m[34m── OPTIMIZATION COSTS ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Opacity Analysis: ERC-8004 Trustless Agent Registries
+── OPTIMIZATION COSTS ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Opacity Analysis: ERC-8004 Trustless Agent Registries
 
 ## Step 1: Opacity Boundaries
 
@@ -1031,12 +1031,12 @@ The interface between ReputationRegistry/ValidationRegistry and IdentityRegistry
 
 The **conservation law** manifests as: every gain in gas efficiency (cached reads, batched access) is directly paid for in architectural flexibility (modularity, upgradeability). The current design maximizes modularity at the cost of 15× gas overhead on the hot path.
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 115 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 115 scans, 0 patterns, 5 laws
 
-[1m[34m── ERROR RESILIENCE ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # ERC-8004 Reference Implementation: Error Boundary Analysis
+── ERROR RESILIENCE ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # ERC-8004 Reference Implementation: Error Boundary Analysis
 
 ## Step 1: The Error Boundaries
 
@@ -1382,12 +1382,12 @@ Every boundary that destroys information (normalization, zero sentinels, generic
 
 The "impossible fix" reveals that **you cannot simultaneously have**: (1) case-insensitive deduplication, (2) case-preserving display, (3) single-mapping efficiency, AND (4) deterministic query behavior. At least one must be sacrificed.
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 118 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 118 scans, 0 patterns, 5 laws
 
-[1m[34m── CONTRACT FIDELITY ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # ERC-8004 Reference Implementation Analysis
+── CONTRACT FIDELITY ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # ERC-8004 Reference Implementation Analysis
 
 ## Step 1: Map Explicit Promises to Implementation
 
@@ -1628,12 +1628,12 @@ The system maximizes **identity** (unique addresses, normalized domains, unforge
 
 **Confidence**: 95% - reviewed all state variables and function logic, zero cost mechanisms found
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 121 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 121 scans, 0 patterns, 5 laws
 
-[1m[34m── SECURITY ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # ERC-8004 Trustless Agents: Security Analysis
+── SECURITY ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # ERC-8004 Trustless Agents: Security Analysis
 
 ## Step 1: The Trust Map
 
@@ -1842,12 +1842,12 @@ function updateAgent(...) external {
 
 **Final Assessment**: The code demonstrates good security awareness (self-registration prevention, self-feedback blocking) but contains **two critical vulnerabilities** (Unicode bypass and TOCTOU race) that undermine the core trust model. The conservation law reveals these are **necessary costs of the chosen flexibility constraints**, not oversights—fixing them requires trading off convenience for security.
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 123 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 123 scans, 0 patterns, 5 laws
 
-[1m[34m── ADVERSARIAL ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # ADVERSARIAL ANALYSIS: Breaking the Structural Analysis
+── ADVERSARIAL ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # ADVERSARIAL ANALYSIS: Breaking the Structural Analysis
 
 ## WRONG PREDICTIONS
 
@@ -2190,12 +2190,12 @@ constructor(address _identityRegistry) {
 
 The "Level 12 Meta-Conservation Law" approach produced **false positives** (claimed bugs that aren't bugs) and **false negatives** (missed bugs that are bugs). A traditional security audit would have caught the front-running, proxy incompatibility, and deployment safety issues that the "structural analysis" completely missed.
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 124 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 124 scans, 0 patterns, 5 laws
 
-[1m[34m── SYNTHESIS ── erc8004.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # FINAL SYNTHESIS: ERC-8004 Reference Implementation
+── SYNTHESIS ── erc8004.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # FINAL SYNTHESIS: ERC-8004 Reference Implementation
 
 ## Refined Conservation Law
 
@@ -2329,13 +2329,13 @@ This finding was **impossible to see from any single analysis**:
 This is **L13 of the analysis itself**: The analysis framework (conservation laws, meta-laws, contradictions) found that the **analytical vocabulary** ("structural", "fixable", "bug") was too constrained to name the real problem. The problem was **in the language layer below logic**. The only way to see this was to have **seven analyses using seven different vocabularies** and observe where they converged despite naming things differently.
 
 **The deepest finding is about the finding process itself**: Multiple analytical perspectives with different operational vocabularies converge on the same underlying invariant *only when the invariant exists at a layer below all of them*. The vocabulary-constraint finding survived all seven analyses because it exists **below the code, below the architecture, in the cognitive-primitive layer** where "agent", "address", and "identity" are concepts before they are types.
-[33mConfabulation warning:[0m 0 suspicious API refs, 58 high line numbers. Use --trust or oracle mode for verified output.
+Confabulation warning: 0 suspicious API refs, 58 high line numbers. Use --trust or oracle mode for verified output.
 
 
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 126 scans, 0 patterns, 5 laws[0m
-  [2mSaved to .deep/findings/erc8004.md[0m
-  [2mProfile: 127 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/erc8004.md
+  Profile: 126 scans, 0 patterns, 5 laws
+  Saved to .deep/findings/erc8004.md
+  Profile: 127 scans, 0 patterns, 5 laws
 
-[32mFull Pipeline complete: 10/10 steps, models: sonnet[0m
-  [2mUse /fix to pick issues, or /fix auto to fix all[0m
+Full Pipeline complete: 10/10 steps, models: sonnet
+  Use /fix to pick issues, or /fix auto to fix all

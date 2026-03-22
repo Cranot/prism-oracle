@@ -1,18 +1,18 @@
-[36mFull Prism: static champion pipeline (10 steps, optimal models)[0m
-    [32mL12 STRUCTURAL[0m (l12) → [2msonnet[0m
-    [32mDEEP SCAN[0m (deep_scan) → [2msonnet[0m
-    [32mRECURSIVE ENTAILMENT[0m (fix_cascade) → [2msonnet[0m
-    [32mIDENTITY DISPLACEMENT[0m (identity) → [2msonnet[0m
-    [32mOPTIMIZATION COSTS[0m (optimize) → [2msonnet[0m
-    [32mERROR RESILIENCE[0m (error_resilience) → [2msonnet[0m
-    [32mCONTRACT FIDELITY[0m (fidelity) → [2msonnet[0m
-    [32mSECURITY[0m (security_v1) → [2msonnet[0m
-    [32mADVERSARIAL[0m (l12_complement_adversarial) → [2msonnet[0m
-    [32mSYNTHESIS[0m (l12_synthesis) → [2msonnet[0m
+Full Prism: static champion pipeline (10 steps, optimal models)
+    L12 STRUCTURAL (l12) → sonnet
+    DEEP SCAN (deep_scan) → sonnet
+    RECURSIVE ENTAILMENT (fix_cascade) → sonnet
+    IDENTITY DISPLACEMENT (identity) → sonnet
+    OPTIMIZATION COSTS (optimize) → sonnet
+    ERROR RESILIENCE (error_resilience) → sonnet
+    CONTRACT FIDELITY (fidelity) → sonnet
+    SECURITY (security_v1) → sonnet
+    ADVERSARIAL (l12_complement_adversarial) → sonnet
+    SYNTHESIS (l12_synthesis) → sonnet
 
-[1m[34m── L12 STRUCTURAL ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll execute the L12 Meta-Conservation analysis on this MetaMask Delegation Framework code.
+── L12 STRUCTURAL ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll execute the L12 Meta-Conservation analysis on this MetaMask Delegation Framework code.
 
 ```markdown
 # L12 Meta-Conservation Analysis: MetaMask Delegation Framework
@@ -289,13 +289,13 @@ The meta-law predicts: **any attempt to add temporal guarantees to blockchain st
 **Meta-law prediction accuracy:** 8/27 bugs are structural — matches `T + D = constant` prediction. The meta-law correctly identifies the **temporal-distributed tradeoff** as the source of structural impossibilities.
 ```
 
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 139 scans, 0 patterns, 5 laws[0m
-  [2mQueued 4 Q&As for AgentsKB seeding[0m
+  Saved to .deep/findings/metamask.md
+  Profile: 139 scans, 0 patterns, 5 laws
+  Queued 4 Q&As for AgentsKB seeding
 
-[1m[34m── DEEP SCAN ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Conservation Law Analysis: MetaMask Delegation Framework
+── DEEP SCAN ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Conservation Law Analysis: MetaMask Delegation Framework
 
 ## Step 1: The Conservation Law
 
@@ -653,17 +653,17 @@ C) **Unsafe cast on self-execution** - assumes msg.sender is DeleGatorCore witho
 - Medium: 1 (Unsafe cast causes confusing errors)
 - Low: 1 (Asymmetric enforcement is by design but confusing)
 
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 142 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/metamask.md
+  Profile: 142 scans, 0 patterns, 5 laws
 
-[1m[34m── RECURSIVE ENTAILMENT ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m
-  [33m⚠ RECURSIVE ENTAILMENT returned empty — continuing[0m
+── RECURSIVE ENTAILMENT ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...
+  ⚠ RECURSIVE ENTAILMENT returned empty — continuing
 
-[1m[34m── IDENTITY DISPLACEMENT ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Identity Displacement Analysis: MetaMask Delegation Framework
+── IDENTITY DISPLACEMENT ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Identity Displacement Analysis: MetaMask Delegation Framework
 
 ## Step 1: Surface the Claim
 
@@ -914,12 +914,12 @@ The framework's power comes from **hiding flexibility behind simple names**. "De
 
 The displacements are **features, not bugs** — but only if you understand that the names are **approximations of the execution model**, not literal descriptions. The framework trades **semantic precision** for **generality**. The debt is the documentation that pretends otherwise.
 
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 145 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/metamask.md
+  Profile: 145 scans, 0 patterns, 5 laws
 
-[1m[34m── OPTIMIZATION COSTS ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        I'll analyze this MetaMask Delegation Framework code by systematically examining opacity boundaries, blind workarounds, and conservation laws.
+── OPTIMIZATION COSTS ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        I'll analyze this MetaMask Delegation Framework code by systematically examining opacity boundaries, blind workarounds, and conservation laws.
 
 ## Step 1: Search for Opacity
 
@@ -979,12 +979,12 @@ Every boundary that enables third-party contribution (enforcers, wallets, encode
 
 It achieves (1) + (3) by sacrificing (2). Flattening for (2) forces choosing between (1) and (3), creating either a rigid protocol or an unsafe one.
 
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 146 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/metamask.md
+  Profile: 146 scans, 0 patterns, 5 laws
 
-[1m[34m── ERROR RESILIENCE ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Complete Analysis: MetaMask Delegation Framework Error Boundaries
+── ERROR RESILIENCE ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Complete Analysis: MetaMask Delegation Framework Error Boundaries
 
 ## Step 1: The Error Boundaries
 
@@ -1420,12 +1420,12 @@ You can optimize for TWO of these, but never all three:
 
 The framework **chooses usability + security** by **hiding complexity** in the empty delegation bypass. The cost is **information destruction** that makes debugging and security analysis impossible.
 
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 148 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/metamask.md
+  Profile: 148 scans, 0 patterns, 5 laws
 
-[1m[34m── CONTRACT FIDELITY ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Structural Analysis: MetaMask Delegation Framework
+── CONTRACT FIDELITY ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Structural Analysis: MetaMask Delegation Framework
 
 ## Step 1: Map Explicit Promises to Implementation
 
@@ -1589,11 +1589,11 @@ function upgradeToAndCall(address _newImplementation, bytes memory _data) public
 | Dual return state in `executeFromExecutor` | **LOW** | Caller must interpret boolean+bytes union |
 | Storage clearing behavior | **HIGH** | Permanent data loss on upgrade |
 
-  [2mSaved to .deep/findings/metamask.md[0m
+  Saved to .deep/findings/metamask.md
 
-[1m[34m── SECURITY ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # Trust Analysis: MetaMask Delegation Framework
+── SECURITY ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # Trust Analysis: MetaMask Delegation Framework
 
 ## Step 1: The Trust Map
 
@@ -1839,12 +1839,12 @@ The framework makes a fundamental trust allocation decision:
 6. **MEDIUM**: Add replay protection (nonce, timestamp) to delegations
 7. **LOW**: Add explicit validation of decoded execution targets
 
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 151 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/metamask.md
+  Profile: 151 scans, 0 patterns, 5 laws
 
-[1m[34m── ADVERSARIAL ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # WRONG PREDICTIONS
+── ADVERSARIAL ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # WRONG PREDICTIONS
 
 ## Claim 1: "Delegations validated once, never rechecked before execution" (TOCTOU)
 
@@ -2126,12 +2126,12 @@ This is **not a direct vulnerability** but it **expands the attack surface**. An
 4. **5 critical bugs** were completely missed (batch isolation, silent call failure, domain inconsistency, etc.)
 5. The TOCTOU vulnerability exists but was **mischaracterized** - it's about missing snapshots, not missing rechecks
 
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 152 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/metamask.md
+  Profile: 152 scans, 0 patterns, 5 laws
 
-[1m[34m── SYNTHESIS ── metamask.txt ── [2msonnet[0m
-  [2mModel → sonnet (optimal for prism)[0m
-[2mthinking...[0m                                        # FINAL SYNTHESIS: MetaMask Delegation Framework
+── SYNTHESIS ── metamask.txt ── sonnet
+  Model → sonnet (optimal for prism)
+thinking...                                        # FINAL SYNTHESIS: MetaMask Delegation Framework
 
 ## REFINED CONSERVATION LAW
 
@@ -2259,13 +2259,13 @@ Any delegation framework on blockchain will have the SAME conservation laws:
 These are not implementation flaws — they are **laws of the substrate**. The blockchain provides global state (acausal) but applications require local causality (validate → execute). The tension between these requirements is **structurally irreconcilable**.
 
 The "deepest finding" is that the framework's design is **optimal within the constraints of the substrate**. The bugs are not mistakes — they are the **cost of doing business** when building causal machines on acausal foundations.
-[33mConfabulation warning:[0m 0 suspicious API refs, 120 high line numbers. Use --trust or oracle mode for verified output.
+Confabulation warning: 0 suspicious API refs, 120 high line numbers. Use --trust or oracle mode for verified output.
 
 
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 153 scans, 0 patterns, 5 laws[0m
-  [2mSaved to .deep/findings/metamask.md[0m
-  [2mProfile: 154 scans, 0 patterns, 5 laws[0m
+  Saved to .deep/findings/metamask.md
+  Profile: 153 scans, 0 patterns, 5 laws
+  Saved to .deep/findings/metamask.md
+  Profile: 154 scans, 0 patterns, 5 laws
 
-[32mFull Pipeline complete: 9/10 steps, models: sonnet[0m
-  [2mUse /fix to pick issues, or /fix auto to fix all[0m
+Full Pipeline complete: 9/10 steps, models: sonnet
+  Use /fix to pick issues, or /fix auto to fix all
