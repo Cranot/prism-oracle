@@ -1,0 +1,13 @@
+*.internal.*
+*.log
+.deep/
+.env
+CONTINUATION_PROMPT.md
+artifacts/
+cache/
+demo-code.sol
+insights/
+node_modules/
+reparse_v2.js
+results/
+tmp_*

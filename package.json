@@ -1,0 +1,36 @@
+{
+  "name": "prism-oracle",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Autonomous code analysis agent on Base. Sells audits at Opus quality, executes at Haiku costs.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "ai-agent",
+    "code-analysis",
+    "base",
+    "x402",
+    "erc-8004",
+    "prism"
+  ],
+  "author": "Cranot",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
+    "@openserv-labs/sdk": "^2.4.1",
+    "@x402/core": "^2.7.0",
+    "@x402/evm": "^2.7.0",
+    "@x402/express": "^2.7.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "ethers": "^6.16.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.28.6"
+  }
+}
