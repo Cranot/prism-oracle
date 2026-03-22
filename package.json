@@ -2,20 +2,34 @@
   "name": "prism-oracle",
   "version": "1.0.0",
   "type": "module",
-  "description": "Autonomous code analysis agent on Base. Sells audits at Opus quality, executes at Haiku costs.",
+  "description": "Structural trust analysis for infrastructure code. Uses cognitive prisms to find conservation laws, concealment mechanisms, and exploit surfaces.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js"
   },
   "keywords": [
+    "structural-analysis",
+    "security",
+    "solidity",
+    "ethereum",
+    "conservation-law",
+    "cognitive-prism",
     "ai-agent",
     "code-analysis",
     "base",
     "x402",
     "erc-8004",
-    "prism"
+    "prism",
+    "exploit-surface"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cranot/prism-oracle"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "author": "Cranot",
   "license": "MIT",
   "dependencies": {

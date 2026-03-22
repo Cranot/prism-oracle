@@ -13,35 +13,50 @@
     .hd p{color:#64748b;font-size:1rem;margin-top:.3rem}
     .sb{display:flex;justify-content:center;gap:2rem;margin:1.5rem 0;flex-wrap:wrap}
     .sb .s{text-align:center} .sb .sv{font-size:1.8rem;font-weight:700;color:#0284c7} .sb .sl{font-size:.68rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.04em}
+
     .cd{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.5rem;margin-bottom:1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:box-shadow .15s}
     .cd:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
-    .cd h2{font-size:1.05rem;font-weight:600;margin-bottom:.75rem}
+    .cd h2{font-size:1.05rem;font-weight:600;margin-bottom:.15rem}
+    .cd .sub{font-size:.82rem;color:#64748b;margin-bottom:.75rem}
+
+    .law-hero{background:linear-gradient(135deg,#f0f7ff,#f5f3ff);border:1px solid #c7d2fe;border-radius:10px;padding:.85rem 1.1rem;margin-bottom:.85rem;text-align:center}
+    .law-hero .law-label{font-size:.6rem;text-transform:uppercase;letter-spacing:.06em;color:#6366f1;font-weight:600;margin-bottom:.25rem}
+    .law-hero .law-text{font-size:.95rem;font-weight:600;color:#312e81;letter-spacing:-.01em}
+
     .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-bottom:.75rem}
     .m{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:.5rem;text-align:center}
     .m .v{font-size:1.1rem;font-weight:700} .m .l{font-size:.6rem;text-transform:uppercase;color:#94a3b8}
     .cy{color:#0284c7} .gn{color:#059669} .rd{color:#dc2626} .mu{color:#64748b}
-    .law{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:.7rem 1rem;margin-bottom:.6rem;color:#475569;font-size:.83rem;line-height:1.5;word-break:break-word}
-    .fi{background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:.7rem 1rem;margin-bottom:.5rem;color:#475569;font-size:.83rem;line-height:1.5}
-    .fi strong{color:#1e293b}
+
+    .finding{background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:.7rem 1rem;margin-bottom:.5rem;color:#475569;font-size:.83rem;line-height:1.5}
+    .finding strong{color:#1e293b}
+    .finding-title{font-weight:600;color:#1e293b;font-size:.85rem;margin-bottom:.3rem}
+
+    .card-footer{display:flex;justify-content:flex-end;margin-top:.5rem}
+    .report-link{font-size:.78rem;color:#6366f1;text-decoration:none;font-weight:500;display:inline-flex;align-items:center;gap:.25rem;padding:.3rem .6rem;border-radius:6px;transition:background .15s}
+    .report-link:hover{background:#f0f0ff;color:#4f46e5}
+
     .bug{display:flex;gap:.5rem;align-items:flex-start;padding:.35rem 0;border-bottom:1px solid #f1f5f9;font-size:.8rem}
     .bug:last-child{border-bottom:none}
     .sv2{font-size:.55rem;padding:.1rem .35rem;border-radius:3px;text-transform:uppercase;font-weight:700;white-space:nowrap;margin-top:2px}
     .sv2.h{background:#fef2f2;color:#dc2626} .sv2.m2{background:#fffbeb;color:#d97706}
     .bi{color:#475569} .bl{font-size:.65rem;color:#94a3b8;font-family:'SF Mono',monospace}
+
     .tabs{display:flex;gap:.4rem;margin-bottom:1rem;flex-wrap:wrap}
     .tab{padding:.35rem .9rem;border-radius:6px;border:1px solid #e2e8f0;background:transparent;color:#64748b;cursor:pointer;font-size:.78rem;font-weight:500}
-    .tab:hover{border-color:#0284c7;color:#0284c7} .tab.act{background:#eff6ff;border-color:#0284c7;color:#0284c7}
+    .tab:hover{border-color:#6366f1;color:#6366f1} .tab.act{background:#f0f0ff;border-color:#6366f1;color:#6366f1}
     .ex{display:none} .ex.act{display:block}
+
     textarea{width:100%;min-height:140px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;color:#1e293b;font-family:'SF Mono',monospace;font-size:.8rem;padding:.7rem;resize:vertical}
-    textarea:focus{outline:none;border-color:#0284c7;box-shadow:0 0 0 3px rgba(2,132,199,.1)}
+    textarea:focus{outline:none;border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.1)}
     textarea::placeholder{color:#94a3b8}
     .ctr{display:flex;gap:.4rem;margin-top:.5rem;align-items:center;flex-wrap:wrap}
     select{background:#fff;border:1px solid #e2e8f0;color:#1e293b;padding:.35rem .6rem;border-radius:8px;font-size:.8rem}
-    .btn{padding:.4rem 1.1rem;border:none;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;background:#0284c7;color:#fff}
-    .btn:hover{background:#0369a1} .btn:disabled{opacity:.5}
+    .btn{padding:.4rem 1.1rem;border:none;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;background:#6366f1;color:#fff}
+    .btn:hover{background:#4f46e5} .btn:disabled{opacity:.5}
     .pr{color:#059669;font-size:.72rem;margin-left:auto;font-weight:500}
     .ld{display:none;text-align:center;padding:2rem} .ld.vis{display:block}
-    .sp{width:28px;height:28px;border:3px solid #e2e8f0;border-top:3px solid #0284c7;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto .5rem}
+    .sp{width:28px;height:28px;border:3px solid #e2e8f0;border-top:3px solid #6366f1;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto .5rem}
     @keyframes spin{to{transform:rotate(360deg)}}
     .rs{display:none} .rs.vis{display:block}
     .rg{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:.6rem}
@@ -50,7 +65,7 @@
     .raw{margin-top:.5rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:.6rem;max-height:250px;overflow-y:auto;font-size:.7rem;color:#64748b;white-space:pre-wrap;font-family:monospace;display:none} .raw.vis{display:block}
     .tr{background:none;border:1px solid #e2e8f0;color:#94a3b8;padding:.2rem .5rem;border-radius:6px;cursor:pointer;font-size:.65rem}
     .ft{text-align:center;padding:1.5rem 0;color:#94a3b8;font-size:.68rem;border-top:1px solid #e2e8f0;margin-top:2rem}
-    .ft a{color:#0284c7;text-decoration:none}
+    .ft a{color:#6366f1;text-decoration:none}
     @media(max-width:640px){.g3{grid-template-columns:1fr 1fr}.rg{grid-template-columns:1fr}.ctr{flex-direction:column;align-items:stretch}}
     @media(max-width:400px){.g3{grid-template-columns:1fr}}
   </style>
@@ -72,109 +87,186 @@
   <!-- OZ -->
   <div class="cd">
     <h2>OpenZeppelin &mdash; Security Bedrock of Ethereum</h2>
-    <p style="font-size:.82rem;color:#64748b;margin-bottom:.6rem">ERC20, Ownable, AccessControl, ReentrancyGuard. 738 lines. Full 9-pass pipeline.</p>
+    <div class="sub">ERC20, Ownable, AccessControl, ReentrancyGuard. 738 lines source.</div>
+    <div class="law-hero">
+      <div class="law-label">Conservation Law</div>
+      <div class="law-text">Safety &times; Gas Efficiency &times; Social Flexibility = Constant</div>
+    </div>
     <div class="g3">
       <div class="m"><div class="v rd">5</div><div class="l">Composition Hazards</div></div>
-      <div class="m"><div class="v gn">$0.06</div><div class="l">Cost</div></div>
-      <div class="m"><div class="v mu">56s</div><div class="l">Time</div></div>
+      <div class="m"><div class="v mu">2,539</div><div class="l">Lines of Analysis</div></div>
+      <div class="m"><div class="v mu">10</div><div class="l">Pipeline Passes</div></div>
     </div>
-    <div class="fi"><strong>Role State Synchronization Paradox:</strong> Owner can grant admin role, renounce ownership, keep admin &mdash; orphaned privileges no component detects. 2,161 lines of full pipeline analysis + 378 lines of exploit surface report.</div>
-    <div class="fi"><strong>Exploit surface:</strong> <code>permit()</code> bypasses standard allowance checks via signature-based authority. Transitive permission escalation via external <code>grantRole()</code>. Admin hierarchy bypass through contract-to-contract role grants.</div>
-    <div class="law"><strong>Conservation law:</strong> Safety &times; Gas Efficiency &times; Social Flexibility = Constant.</div>
+    <div class="finding">
+      <div class="finding-title">Role State Synchronization Paradox</div>
+      Owner grants admin role, renounces ownership, keeps admin &mdash; orphaned privileges no component detects.
+    </div>
+    <div class="finding">
+      <div class="finding-title">Exploit Surface</div>
+      <code>permit()</code> bypasses standard allowance checks. Transitive permission escalation via <code>grantRole()</code>. Admin hierarchy bypass through contract-to-contract role grants.
+    </div>
+    <div class="card-footer">
+      <a class="report-link" href="https://github.com/Cranot/prism-oracle/blob/master/examples/openzeppelin-full-pipeline.md" target="_blank">View Full Report &rarr;</a>
+    </div>
   </div>
 
   <!-- LIDO -->
   <div class="cd">
     <h2>Lido stETH &mdash; Liquid Staking Infrastructure</h2>
-    <p style="font-size:.82rem;color:#64748b;margin-bottom:.6rem">StETH + Lido core. 1,905 lines. Full 9-pass pipeline + exploit surface scan.</p>
-    <div class="g3">
-      <div class="m"><div class="v mu">3,119</div><div class="l">Lines of Analysis</div></div>
-      <div class="m"><div class="v mu">10</div><div class="l">Pipeline Passes</div></div>
-      <div class="m"><div class="v mu">389</div><div class="l">Exploit Report Lines</div></div>
+    <div class="sub">StETH + Lido core. 1,905 lines source.</div>
+    <div class="law-hero">
+      <div class="law-label">Conservation Law</div>
+      <div class="law-text">Observer-Dependent Value &times; Denomination = Constant</div>
     </div>
-    <div class="fi"><strong>Exploit surface:</strong> Dilution attacks via adapters minting unbacked shares. Front-running via oracle information asymmetry. Staking router loads withdrawal queues without allowlist.</div>
-    <div class="law"><strong>Conservation law:</strong> Observer-Dependent Value &times; Denomination = Constant. The share rate isn't hiding a true value &mdash; it's creating value by being different for each observer.</div>
+    <div class="g3">
+      <div class="m"><div class="v rd">3</div><div class="l">Exploit Vectors</div></div>
+      <div class="m"><div class="v mu">3,508</div><div class="l">Lines of Analysis</div></div>
+      <div class="m"><div class="v mu">10</div><div class="l">Pipeline Passes</div></div>
+    </div>
+    <div class="finding">
+      <div class="finding-title">Observer-Dependent Value Creation</div>
+      The share rate isn't hiding a true value &mdash; it creates value by being different for each observer.
+    </div>
+    <div class="finding">
+      <div class="finding-title">Exploit Surface</div>
+      Dilution attacks via adapters minting unbacked shares. Front-running via oracle information asymmetry. Staking router loads withdrawal queues without allowlist.
+    </div>
+    <div class="card-footer">
+      <a class="report-link" href="https://github.com/Cranot/prism-oracle/blob/master/examples/lido-full-pipeline.md" target="_blank">View Full Report &rarr;</a>
+    </div>
   </div>
 
   <!-- METAMASK -->
   <div class="cd">
     <h2>MetaMask Delegation Framework</h2>
-    <p style="font-size:.82rem;color:#64748b;margin-bottom:.6rem">DelegationManager, DeleGatorCore, CaveatEnforcer. 971 lines. Full 9-pass pipeline.</p>
+    <div class="sub">DelegationManager, DeleGatorCore, CaveatEnforcer. 971 lines source.</div>
+    <div class="law-hero">
+      <div class="law-label">Conservation Law</div>
+      <div class="law-text">Temporal Consistency &times; Computational Composability = Constant</div>
+    </div>
     <div class="g3">
+      <div class="m"><div class="v rd">3</div><div class="l">Exploit Vectors</div></div>
       <div class="m"><div class="v mu">2,271</div><div class="l">Lines of Analysis</div></div>
       <div class="m"><div class="v mu">9</div><div class="l">Pipeline Passes</div></div>
-      <div class="m"><div class="v rd">3</div><div class="l">Exploit Vectors</div></div>
     </div>
-    <div class="fi"><strong>Permission amplification:</strong> A delegates to B, B delegates to C &mdash; C executes as A without A's authorization of C. Snaps receive full signing authority; malicious snap signs transactions outside normal confirmation flow.</div>
-    <div class="law"><strong>Conservation law:</strong> Temporal Consistency &times; Computational Composability = Constant. Independent deployment guarantees coordination failures at boundaries.</div>
+    <div class="finding">
+      <div class="finding-title">Permission Amplification</div>
+      A delegates to B, B delegates to C &mdash; C executes as A without A's authorization. Independent deployment guarantees coordination failures at boundaries.
+    </div>
+    <div class="card-footer">
+      <a class="report-link" href="https://github.com/Cranot/prism-oracle/blob/master/examples/metamask-full-pipeline.md" target="_blank">View Full Report &rarr;</a>
+    </div>
   </div>
 
   <!-- ERC-8004 -->
   <div class="cd">
     <h2>ERC-8004 &mdash; The Hackathon's Own Infrastructure</h2>
-    <p style="font-size:.82rem;color:#64748b;margin-bottom:.6rem">Identity + Reputation + Validation registries. 549 lines.</p>
+    <div class="sub">Identity + Reputation + Validation registries. 549 lines source.</div>
+    <div class="law-hero">
+      <div class="law-label">Conservation Law</div>
+      <div class="law-text">Information Access &times; Execution Efficiency = Constant</div>
+    </div>
     <div class="g3">
       <div class="m"><div class="v rd">7</div><div class="l">Findings</div></div>
-      <div class="m"><div class="v gn">$0.05</div><div class="l">Cost</div></div>
-      <div class="m"><div class="v mu">50s</div><div class="l">Time</div></div>
+      <div class="m"><div class="v mu">2,665</div><div class="l">Lines of Analysis</div></div>
+      <div class="m"><div class="v mu">10</div><div class="l">Pipeline Passes</div></div>
     </div>
-    <div class="fi"><strong>Identity Fragmentation:</strong> Phantom identities through normalization inconsistency. ENS domain seizure permanently breaks agent identity. Circular delegation creates infinite loops (DoS via gas exhaustion). 2,341 lines of full pipeline + 324 lines exploit surface.</div>
-    <div class="law"><strong>Conservation law:</strong> Information Access &times; Execution Efficiency = Constant.</div>
+    <div class="finding">
+      <div class="finding-title">Identity Fragmentation</div>
+      Phantom identities through normalization inconsistency. ENS domain seizure permanently breaks agent identity. Circular delegation creates infinite loops (DoS via gas exhaustion).
+    </div>
+    <div class="card-footer">
+      <a class="report-link" href="https://github.com/Cranot/prism-oracle/blob/master/examples/erc8004-full-pipeline.md" target="_blank">View Full Report &rarr;</a>
+    </div>
   </div>
 
   <!-- x402 -->
   <div class="cd">
     <h2>x402 Protocol &mdash; Coinbase Payment Infrastructure</h2>
-    <p style="font-size:.82rem;color:#64748b;margin-bottom:.6rem">Client + server + facilitator core. 2,026 lines.</p>
+    <div class="sub">Client + server + facilitator core. 2,026 lines source.</div>
+    <div class="law-hero">
+      <div class="law-label">Conservation Law</div>
+      <div class="law-text">Deployment Decoupling &harr; Operational Coherence</div>
+    </div>
     <div class="g3">
       <div class="m"><div class="v rd">5</div><div class="l">Findings</div></div>
-      <div class="m"><div class="v gn">$0.05</div><div class="l">Cost</div></div>
-      <div class="m"><div class="v mu">50s</div><div class="l">Time</div></div>
+      <div class="m"><div class="v mu">2,908</div><div class="l">Lines of Analysis</div></div>
+      <div class="m"><div class="v mu">10</div><div class="l">Pipeline Passes</div></div>
     </div>
-    <div class="fi"><strong>Centralized Assumptions:</strong> Facilitator is single point of trust in a protocol designed to minimize trust. Race conditions in async hook state. Silent failures when networks overlap. 2,732 lines of full pipeline + 176 lines exploit surface.</div>
-    <div class="law"><strong>Conservation law:</strong> Deployment Decoupling &harr; Operational Coherence.</div>
+    <div class="finding">
+      <div class="finding-title">Centralized Assumptions in Distributed Protocol</div>
+      Facilitator is single point of trust in a protocol designed to minimize trust. Race conditions in async hook state. Silent failures when networks overlap.
+    </div>
+    <div class="card-footer">
+      <a class="report-link" href="https://github.com/Cranot/prism-oracle/blob/master/examples/x402-full-pipeline.md" target="_blank">View Full Report &rarr;</a>
+    </div>
   </div>
 
   <!-- OCTANT -->
   <div class="cd">
     <h2>Octant &mdash; Public Goods Allocation</h2>
-    <p style="font-size:.82rem;color:#64748b;margin-bottom:.6rem">Epochs, Deposits, Proposals, Vault, Auth. 560 lines. Full 9-pass pipeline.</p>
+    <div class="sub">Epochs, Deposits, Proposals, Vault, Auth. 560 lines source.</div>
+    <div class="law-hero">
+      <div class="law-label">Conservation Law</div>
+      <div class="law-text">Historical Fidelity &times; Computational Directness &times; Config Flexibility = Constant</div>
+    </div>
     <div class="g3">
+      <div class="m"><div class="v rd">5</div><div class="l">Contracts Analyzed</div></div>
       <div class="m"><div class="v mu">2,440</div><div class="l">Lines of Analysis</div></div>
       <div class="m"><div class="v mu">10</div><div class="l">Pipeline Passes</div></div>
-      <div class="m"><div class="v mu">5</div><div class="l">Contracts</div></div>
     </div>
-    <div class="fi"><strong>Epoch allocation impossibility:</strong> Cannot simultaneously maintain historical records, compute allocations efficiently, and allow flexible configuration changes.</div>
-    <div class="law"><strong>Conservation law:</strong> Historical Fidelity &times; Computational Directness &times; Configuration Flexibility = Constant.</div>
+    <div class="finding">
+      <div class="finding-title">Epoch Allocation Impossibility</div>
+      Cannot simultaneously maintain historical records, compute allocations efficiently, and allow flexible configuration changes.
+    </div>
+    <div class="card-footer">
+      <a class="report-link" href="https://github.com/Cranot/prism-oracle/blob/master/examples/octant-full-pipeline.md" target="_blank">View Full Report &rarr;</a>
+    </div>
   </div>
 
   <!-- ERC-8183 -->
   <div class="cd">
     <h2>ERC-8183 &mdash; Agent Interaction Standard (Virtuals)</h2>
-    <p style="font-size:.82rem;color:#64748b;margin-bottom:.6rem">The agent-to-agent interaction spec. 730 lines. Full 9-pass pipeline.</p>
+    <div class="sub">The agent-to-agent interaction spec. 730 lines source.</div>
+    <div class="law-hero">
+      <div class="law-label">Conservation Law</div>
+      <div class="law-text">Decision Centralization &times; Temporal Efficiency = Constant</div>
+    </div>
     <div class="g3">
-      <div class="m"><div class="v mu">2,595</div><div class="l">Lines of Analysis</div></div>
       <div class="m"><div class="v rd">7 HIGH + 3 MED</div><div class="l">Bugs Found</div></div>
+      <div class="m"><div class="v mu">2,595</div><div class="l">Lines of Analysis</div></div>
       <div class="m"><div class="v mu">10</div><div class="l">Pipeline Passes</div></div>
     </div>
-    <div class="fi"><strong>7 HIGH-severity fixable bugs:</strong> setBudget authorization missing, expectedBudget field absent, meta-transactions broken, hook liveness unguarded. Budget negotiation deadlock. Evaluator fee incentive distortion.</div>
-    <div class="law"><strong>Conservation law:</strong> Decision Centralization &times; Temporal Efficiency = Constant. More evaluators = better decisions but capital locked longer.</div>
+    <div class="finding">
+      <div class="finding-title">7 HIGH-Severity Fixable Bugs</div>
+      setBudget authorization missing, expectedBudget field absent, meta-transactions broken, hook liveness unguarded. Budget negotiation deadlock. Evaluator fee incentive distortion.
+    </div>
+    <div class="card-footer">
+      <a class="report-link" href="https://github.com/Cranot/prism-oracle/blob/master/examples/erc8183-full-pipeline.md" target="_blank">View Full Report &rarr;</a>
+    </div>
   </div>
 
   <!-- Framework Tabs -->
   <div class="cd">
     <h2>Framework Validations</h2>
+    <div class="sub">Methodology transfers beyond Ethereum &mdash; same prisms produce conservation laws on any structured codebase.</div>
     <div class="tabs">
-      <button class="tab act" onclick="showEx('star',this)">Starlette (9)</button>
-      <button class="tab" onclick="showEx('click',this)">Click (10)</button>
+      <button class="tab act" onclick="showEx('star',this)">Starlette (9 findings)</button>
+      <button class="tab" onclick="showEx('click',this)">Click (10 findings)</button>
     </div>
     <div class="ex act" id="ex-star">
-      <div class="law"><strong style="color:#0284c7">Law:</strong> Complexity relocation &mdash; structural fixes push complexity to another layer.</div>
+      <div class="law-hero">
+        <div class="law-label">Conservation Law</div>
+        <div class="law-text">Complexity cannot be eliminated, only relocated between layers</div>
+      </div>
       <div class="bug"><span class="sv2 h">high</span><div><div class="bi">Recursive mount &mdash; stack overflow</div></div></div>
       <div class="bug"><span class="sv2 h">high</span><div><div class="bi">redirect_slashes &mdash; infinite redirect</div></div></div>
     </div>
     <div class="ex" id="ex-click">
-      <div class="law"><strong style="color:#0284c7">Law:</strong> Context isolation trades against ergonomics.</div>
+      <div class="law-hero">
+        <div class="law-label">Conservation Law</div>
+        <div class="law-text">Context isolation trades against ergonomics</div>
+      </div>
       <div class="bug"><span class="sv2 h">high</span><div><div class="bi">Chain mode &mdash; args leak between commands</div></div></div>
       <div class="bug"><span class="sv2 h">high</span><div><div class="bi">Shallow copy &mdash; nested dicts shared across contexts</div></div></div>
     </div>
@@ -186,10 +278,10 @@
     <textarea id="ci" placeholder="Paste code here &mdash; Solidity, Python, TypeScript, anything."></textarea>
     <div class="ctr">
       <select id="ms">
-        <option value="l12">L12 &mdash; Deep structural</option>
-        <option value="sdl">SDL &mdash; Conservation + bugs</option>
-        <option value="exploit">Exploit Surface &mdash; Attack vectors</option>
-        <option value="full">Full &mdash; 9-pass pipeline</option>
+        <option value="l12">Deep Structural</option>
+        <option value="sdl">Conservation + Bugs</option>
+        <option value="exploit">Exploit Surface</option>
+        <option value="full">Full 9-Pass Pipeline</option>
       </select>
       <select id="mm">
         <option value="sonnet">Sonnet &mdash; Recommended</option>
@@ -211,7 +303,7 @@
       <div class="rc"><div class="rl">Bugs</div><div class="rv" id="rb"></div></div>
       <div class="rc"><div class="rl">Confidence</div><div class="rv" id="rn"></div></div>
     </div>
-    <div id="rl" style="display:none"><div class="law" id="rlt"></div></div>
+    <div id="rl" style="display:none"><div class="law-hero" style="text-align:left"><div class="law-label">Conservation Law</div><div class="law-text" id="rlt" style="font-size:.85rem"></div></div></div>
     <div id="rbl"></div>
     <button class="tr" onclick="document.getElementById('ro').classList.toggle('vis')">Raw output</button>
     <div class="raw" id="ro"></div>
