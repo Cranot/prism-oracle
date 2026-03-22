@@ -4,9 +4,9 @@
 
 ![Prism Oracle Cover](cover.jpg)
 
-**Live:** https://oracle.agentskb.com
-**Repo:** https://github.com/Cranot/prism-oracle
-**Engine:** [prism.py](https://github.com/Cranot/agi-in-md) — 58+ cognitive prisms, 42 rounds of research, 1,000+ experiments
+**Live:** https://oracle.agentskb.com <br>
+**Repo:** https://github.com/Cranot/prism-oracle <br>
+**Engine:** [prism.py](https://github.com/Cranot/agi-in-md) — 58+ cognitive prisms, 42 rounds of research, 1,000+ experiments <br>
 **On-chain:** [ERC-8004 Identity on Base Mainnet](https://basescan.org/tx/0x52c264572ba59355f291db9838c301dfcdf9ee2cc7a64b7d82ed110eeaab16ee)
 
 ---

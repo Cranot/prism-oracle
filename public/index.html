@@ -8,11 +8,15 @@
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:-apple-system,'Segoe UI','Inter',sans-serif;background:#fafbfc;color:#1e293b;min-height:100vh}
     .c{max-width:920px;margin:0 auto;padding:2rem}
-    .hd{text-align:center;padding:2.5rem 0 1rem}
-    .hd h1{font-size:2.4rem;font-weight:700;color:#0f172a;letter-spacing:-.02em}
-    .hd p{color:#64748b;font-size:1rem;margin-top:.3rem}
-    .sb{display:flex;justify-content:center;gap:2rem;margin:1.5rem 0;flex-wrap:wrap}
+    .hero{display:flex;align-items:center;gap:2rem;padding:2rem 0 1rem}
+    .hero-left{flex:1;min-width:0}
+    .hero-right{flex:0 0 400px}
+    .hero-right img{width:100%;border-radius:12px;border:1px solid #e2e8f0}
+    .hero-left h1{font-size:2.4rem;font-weight:700;color:#0f172a;letter-spacing:-.02em}
+    .hero-left p{color:#64748b;font-size:1rem;margin-top:.3rem}
+    .sb{display:flex;gap:2rem;margin:1.2rem 0;flex-wrap:wrap}
     .sb .s{text-align:center} .sb .sv{font-size:1.8rem;font-weight:700;color:#0284c7} .sb .sl{font-size:.68rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.04em}
+    @media(max-width:640px){.hero{flex-direction:column-reverse;text-align:center}.hero-right{flex:0 0 auto;max-width:320px}.sb{justify-content:center}}
 
     .cd{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.5rem;margin-bottom:1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:box-shadow .15s}
     .cd:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
@@ -73,15 +77,19 @@
 <body>
 <div class="c">
 
-  <div class="hd">
-    <h1>Prism Oracle</h1>
-    <p>Structural trust analysis for the infrastructure the ecosystem depends on.</p>
-  </div>
-
-  <div class="sb">
-    <div class="s"><div class="sv">9</div><div class="sl">Targets Analyzed</div></div>
-    <div class="s"><div class="sv">7</div><div class="sl">Conservation Laws</div></div>
-    <div class="s"><div class="sv">19K+</div><div class="sl">Lines of Analysis</div></div>
+  <div class="hero">
+    <div class="hero-left">
+      <h1>Prism Oracle</h1>
+      <p style="font-size:1.05rem;color:#475569;margin-top:.5rem;line-height:1.5">A cognitive prism is a 332-word prompt that changes how AI models frame problems. Instead of code review, the model produces conservation laws &mdash; structural trade-offs that predict where future vulnerabilities will appear. We analyzed 9 infrastructure targets the Ethereum ecosystem depends on.</p>
+      <div class="sb">
+        <div class="s"><div class="sv">9</div><div class="sl">Targets Analyzed</div></div>
+        <div class="s"><div class="sv">7</div><div class="sl">Conservation Laws</div></div>
+        <div class="s"><div class="sv">19K+</div><div class="sl">Lines of Analysis</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="/cover.jpg" alt="Prism Oracle — Infrastructure code refracted into structural findings">
+    </div>
   </div>
 
   <!-- OZ -->
@@ -274,14 +282,14 @@
 
   <!-- TRY IT -->
   <div class="cd">
-    <h2>Analyze Any Code</h2>
-    <textarea id="ci" placeholder="Paste code here &mdash; Solidity, Python, TypeScript, anything."></textarea>
+    <h2>Try It &mdash; Analyze Any Input</h2>
+    <textarea id="ci" placeholder="Paste code, specs, protocols, or any structured text &mdash; Solidity, Python, TypeScript, EIPs, documentation, anything."></textarea>
     <div class="ctr">
       <select id="ms">
-        <option value="l12">Deep Structural</option>
-        <option value="sdl">Conservation + Bugs</option>
-        <option value="exploit">Exploit Surface</option>
-        <option value="full">Full 9-Pass Pipeline</option>
+        <option value="l12">Structural Analysis (trade-offs + bugs)</option>
+        <option value="sdl">Quick Scan (conservation laws + patterns)</option>
+        <option value="exploit">Exploit Surface (attack vectors)</option>
+        <option value="full">Full Pipeline (9 passes, ~2 min)</option>
       </select>
       <select id="mm">
         <option value="sonnet">Sonnet &mdash; Recommended</option>
